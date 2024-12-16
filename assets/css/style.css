@@ -1,6 +1,6 @@
 .description p, .about p, .process p{
   font-size:16px;
-  color:var(--paragraph-color);
+  color:#727272;
   letter-spacing:0.02em;
   line-height:26px;
   width:540px;
@@ -38,13 +38,26 @@
   color:black;
 }
 .header__nav ul li a:hover{
-  color:var(--main-color);
+  color:#34547A;
 }
 
-:root{
-  --main-color:#34547A;
-  --secondary-color:#EEEFF1;
-  --paragraph-color:#727272;
+footer{
+  background-color:#34547A;
+  color:#ffffff;
+  padding-inline:20px;
+}
+footer .footer__item{
+  max-width:1110px;
+  height:151px;
+  margin-inline:auto;
+}
+footer .footer__item h2{
+  font-size:21px;
+  font-weight:500;
+  padding-block:50px 13px;
+}
+footer .footer__item span{
+  font-size:13px;
 }
 
 *{
@@ -56,26 +69,23 @@
 }
 
 header{
-  background-color:var(--secondary-color);
+  background-color:#EEEFF1;
   padding-inline:20px;
   height:700px;
 }
-
-.container__header{
+header .container__header{
   max-width:1110px;
   margin-inline:auto;
 }
-
-.description__header{
+header .container__header .description .description__header{
   padding-top:82px;
   padding-bottom:45px;
   margin:0;
   font-size:48px;
   font-weight:500;
 }
-
-.description__button{
-  background-color:var(--main-color);
+header .container__header .description .description__button{
+  background-color:#34547A;
   height:65px;
   width:225px;
   margin-top:58px;
@@ -86,33 +96,32 @@ header{
   font-size:16px;
   padding-block:19px 20px;
 }
+header .container__header .description .description__button:hover{
+  cursor:pointer;
+}
 
-.container__about{
+main .container__about{
   height:359px;
   background-color:#F9F9F9;
   padding-inline:20px;
 }
-
-.about{
+main .container__about .about{
   text-align:center;
   max-width:1110px;
   margin-inline:auto;
 }
-
-.about__header{
+main .container__about .about .about__header{
   padding-block:112px 40px;
   margin:0;
   font-size:32px;
   font-weight:500;
 }
-
-.about__about{
+main .container__about .about .about__about{
   margin-inline:auto;
 }
-
-.container__projects{
+main .container__projects{
   margin-inline:auto;
-  background-color:var(--main-color);
+  background-color:#34547A;
   color:#ffffff;
   height:250px;
   display:-webkit-box;
@@ -123,8 +132,7 @@ header{
           justify-content:center;
   padding-inline:20px;
 }
-
-.projects{
+main .container__projects .projects{
   max-width:1110px;
   display:-webkit-box;
   display:-ms-flexbox;
@@ -134,15 +142,13 @@ header{
       -ms-flex-pack:center;
           justify-content:center;
 }
-
-.top_row__projects, .bottom_row__projects{
+main .container__projects .projects .top_row__projects, main .container__projects .projects .bottom_row__projects{
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
   gap:49px;
 }
-
-.projects__item{
+main .container__projects .projects .top_row__projects .projects__item, main .container__projects .projects .bottom_row__projects .projects__item{
   width:141px;
   height:50px;
   margin-block:auto;
@@ -150,64 +156,34 @@ header{
   padding-left:70px;
   line-height:24px;
 }
-
-.large_font__projects{
+main .container__projects .projects .top_row__projects .projects__item .large_font__projects, main .container__projects .projects .bottom_row__projects .projects__item .large_font__projects{
   font-size:21px;
 }
-
-.container__process{
+main .container__process{
   background-color:#EEEFF1;
   padding-inline:20px;
   height:1004px;
 }
-
-.process{
+main .process{
   margin-inline:auto;
   max-width:1110px;
 }
-
-.process__header, .process__about{
+main .process__header, main .process__about{
   text-align:center;
   margin-inline:auto;
 }
-
-.process__header{
+main .process__header{
   padding-block:100px 42px;
   margin:0;
   font-size:32px;
   font-weight:500;
 }
-
-.process__about{
+main .process__about{
   padding-bottom:50px;
 }
-
-.video{
+main .video{
   margin-inline:auto;
 }
-
-footer{
-  background-color:var(--main-color);
-  color:#ffffff;
-  padding-inline:20px;
-}
-
-.container__footer{
-  max-width:1110px;
-  height:151px;
-  margin-inline:auto;
-}
-
-.footer__name{
-  font-size:21px;
-  font-weight:500;
-  padding-block:50px 13px;
-}
-
-.footer__copyright{
-  font-size:13px;
-}
-
 @media screen and (max-width: 1160px){
   header{
     height:500px;
@@ -305,7 +281,6 @@ footer{
     font-size:16px;
   }
 }
-
 @media screen and (max-width: 768px){
   header{
     padding-inline:10px;
