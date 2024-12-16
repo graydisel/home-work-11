@@ -47,6 +47,7 @@ footer {
   .container__footer {
     height: 151px;
     max-width: 1110px;
+    margin-inline: auto;
     .footer__item {
       margin-inline: auto;
       h2 {
@@ -117,17 +118,19 @@ footer {
     }
   }
 
+  //Main
   main {
     .container__about, .container__projects, .container__process {
       padding-inline: 10px;
       }
   }
+
+  //Footer
   footer {
     padding-inline: 10px;
     min-width: 375px;
     .container__footer {
       width: 335px;
-      margin-inline: auto;
       .footer__item {
         .footer__name {
           font-size: 16px;
